@@ -49,7 +49,7 @@ main{padding:0 clamp(1rem,4vw,2.25rem) 3rem}
 
 /* HERO */
 .hero{position:relative;height:min(100vh,960px);display:grid;align-items:center;padding:6vh 0}
-.hero-bg{position:absolute;inset:0;background-image:url('../img.jpg');background-size:cover;background-position:top center;filter:contrast(.95) saturate(.95);transform-origin:center top}
+.hero-bg{position:absolute;inset:0;background-image:url('img.jpg');background-size:cover;background-position:top center;filter:contrast(.95) saturate(.95);transform-origin:center top}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,36,85,0.58),rgba(0,36,85,0.38));mix-blend-mode:multiply}
 .hero-inner{position:relative;z-index:10;display:flex;align-items:center;min-height:70vh;padding:6vh 0}
 .hero-copy{max-width:880px;background:rgba(255,255,255,0.92);padding:2.25rem;border-radius:22px;box-shadow:var(--shadow-strong)}
