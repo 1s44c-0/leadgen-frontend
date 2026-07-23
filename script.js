@@ -133,7 +133,7 @@ orderForm.addEventListener('submit', async (event) => {
     return;
   }
 
-  if (!validateEmail(data.email)) {
+  if (data.email && !validateEmail(data.email)) {
     showError('Please enter a valid email address.');
     return;
   }
