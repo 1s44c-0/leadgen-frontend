@@ -177,10 +177,6 @@ p {
   align-items: center;
   gap: 2rem;
   padding: 3rem 0 2.5rem;
-  /* background-image: url('img.png');
-  background-repeat: no-repeat;;
-  background-position: center;
-  background-size: cover; */
 }
 
 .hero-copy {
