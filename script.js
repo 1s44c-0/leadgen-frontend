@@ -112,8 +112,7 @@ function setLoading(active) {
       spinner.className = 'spinner';
       submitButton.prepend(spinner);
     }
-    submitButton.textContent = 'Submitting your order...';
-    submitButton.prepend(submitButton.querySelector('.spinner'));
+    submitButton.innerHTML = '<span class="spinner"></span>Submitting your order...';
   } else {
     if (existingSpinner) {
       existingSpinner.remove();
