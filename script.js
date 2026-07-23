@@ -128,7 +128,7 @@ orderForm.addEventListener('submit', async (event) => {
 
   const data = getFormData();
 
-  if (!data.full_name || !data.phone_number || !data.email || !data.product || !data.address) {
+  if (!data.full_name || !data.phone_number || !data.product || !data.address) {
     showError('Please complete all required fields.');
     return;
   }
