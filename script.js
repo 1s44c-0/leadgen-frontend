@@ -76,16 +76,16 @@ faqCards.forEach((card) => {
   });
 });
 
-function validateEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
+// function validateEmail(email) {
+//   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+// }
 
 function getFormData() {
   const formData = new FormData(orderForm);
   return {
     full_name: formData.get('full_name')?.trim() || '',
     phone_number: formData.get('phone_number')?.trim() || '',
-    email: formData.get('email')?.trim() || '',
+    // email: formData.get('email')?.trim() || '',
     product: formData.get('product') || '',
     quantity: Number(formData.get('quantity')) || 1,
     address: formData.get('address')?.trim() || '',
