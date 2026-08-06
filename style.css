@@ -200,6 +200,11 @@ p {
   color: var(--text);
 }
 
+.hero-copy img {
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
 .hero-copy p {
   font-size: 1.1rem;
   margin: 1.5rem 0 2rem;
@@ -408,7 +413,7 @@ p {
 .modal-card {
   margin: auto;
   width: min(680px, 100%);
-  border-radius: 32px;
+  border-radius: 10px;
   padding: 2rem;
   background: var(--surface);
   box-shadow: 0 32px 80px rgba(16, 33, 70, 0.18);
