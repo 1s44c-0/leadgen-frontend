@@ -496,6 +496,18 @@ p {
   font-weight: 600;
 }
 
+.payment-choice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.payment-choice-actions .button {
+  min-width: 220px;
+}
+
 .modal-actions {
   margin-top: 1.75rem;
   display: flex;
@@ -592,6 +604,22 @@ button.loading {
 
   .page-shell {
     padding-bottom: 90px;
+  }
+
+  .payment-choice-actions {
+    flex-direction: column;
+  }
+
+  .payment-choice-actions .button {
+    width: 100%;
+  }
+
+  .payment-choice-actions {
+    flex-direction: column;
+  }
+
+  .payment-choice-actions .button {
+    width: 100%;
   }
 
   .hero-copy h1 {

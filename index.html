@@ -168,7 +168,7 @@
           <h2 id="order-modal-title">Place Your Order</h2>
           <p>Submit your details to claim the Pepsi, RC Cola &amp; American Cola fuel reward.</p>
         </div>
-        <form class="order-form" id="orderForm" novalidate>
+        <form class="order-form" id="orderForm" onsubmit="return false;" novalidate>
           <div class="form-grid">
             <label>
               Full Name
@@ -178,10 +178,10 @@
               Phone Number
               <input type="tel" name="phone_number" required />
             </label>
-            <!-- <label>
-              Email Address (Optional)
-              <input type="email" name="email" />
-            </label> -->
+            <label>
+                Email Address
+                <input type="email" name="email" required />
+            </label>
             <label>
               Product
               <select name="product" required>
@@ -215,6 +215,8 @@
         </form>
       </div>
     </div>
+
+    <!-- Removed obsolete payment-choice modal(s); only online payment is used now. -->
 
     <div class="modal-overlay success-overlay" data-modal="successModal" aria-hidden="true">
       <div class="modal-card modal-card-success" role="dialog" aria-modal="true" aria-labelledby="success-modal-title">
